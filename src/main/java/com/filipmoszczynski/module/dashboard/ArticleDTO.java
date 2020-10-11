@@ -34,4 +34,13 @@ public class ArticleDTO {
         this.comments = comments;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "ArticleDTO{" +
+                "title='" + title + '\'' +
+                ", text='" + text + '\'' +
+                ", comments=" + comments +
+                '}';
+    }
 }

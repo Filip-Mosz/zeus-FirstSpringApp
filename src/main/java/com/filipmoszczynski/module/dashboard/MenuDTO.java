@@ -17,4 +17,12 @@ public class MenuDTO {
     public String getUrl() {
         return url;
     }
+
+    @Override
+    public String toString() {
+        return "MenuDTO{" +
+                "name='" + name + '\'' +
+                ", url='" + url + '\'' +
+                '}';
+    }
 }

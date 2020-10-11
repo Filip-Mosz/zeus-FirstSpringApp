@@ -17,4 +17,12 @@ public class CommentDTO {
     public String getText() {
         return text;
     }
+
+    @Override
+    public String toString() {
+        return "CommentDTO{" +
+                "author='" + author + '\'' +
+                ", text='" + text + '\'' +
+                '}';
+    }
 }
