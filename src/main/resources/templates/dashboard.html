@@ -16,7 +16,10 @@
         <div class="col-4">
             <ul class="list-group">
                 <li th:each="item : ${menu}" class="list-group-item">
-                    <a href="#link" th:text="${item.name}">name</a>
+                    <a
+                            th:href="${item.url}"
+                            th:text="${item.name}">name
+                    target="_blank"</a>
                 </li>
             </ul>
         </div>
