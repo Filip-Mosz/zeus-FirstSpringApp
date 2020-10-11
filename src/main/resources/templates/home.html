@@ -5,8 +5,35 @@
     <title>Zeus: Spring app</title>
 </head>
 <body>
-    <p>Name: <span th:text="${person.name}">to zostanie podmienione przez Thymeleaf'a</span></p>
-    <p>Surname: <span th:text="${person.surname}">to zostanie podmienione przez Thymeleaf'a</span></p>
-    <p>Age: <span th:text="${person.age}">to zostanie podmienione przez Thymeleaf'a</span></p>
+
+<section>
+    <fieldset>
+        <legend>String</legend>
+        <p>Name: <span th:text="${name}">Adam</span></p>
+    </fieldset>
+</section>
+
+<section>
+    <fieldset>
+        <legend>Obiekt</legend>
+        <p>Name: <span th:text="${person.name}">imię klienta</span></p>
+        <p>Surname: <span th:text="${person.surname}">nazwisko klienta</span></p>
+        <p>Age: <span th:text="${person.age}">wiek klienta</span></p>
+        <hr>
+    </fieldset>
+</section>
+
+<section>
+    <fieldset>
+        <legend>Lista</legend>
+        <div th:each="person:${personsList}">
+            <p>Name: <span th:text="${person.name}">imię klienta</span></p>
+            <p>Surname: <span th:text="${person.surname}">nazwisko klienta</span></p>
+            <p>Age: <span th:text="${person.age}">wiek klienta</span></p>
+            <hr>
+        </div>
+    </fieldset>
+
+</section>
 </body>
 </html>
