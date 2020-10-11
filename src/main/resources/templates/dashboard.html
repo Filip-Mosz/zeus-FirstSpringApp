@@ -3,11 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
-    <link media="all" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!--    <link media="all" rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+    <link th:href="@{bootstrap.min.css}" rel="stylesheet"> <!-- wersja offline -->
 </head>
 <body>
-Plik Dashboard
-<pre th:text="${menu}"></pre>
-<pre th:text="${article}"></pre>
+<!--Plik Dashboard-->
+<!--<pre th:text="${menu}"></pre>-->
+<!--<pre th:text="${article}"></pre>-->
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <ul class="list-group">
+                <li th:each="item : ${menu}" class="list-group-item">
+                    <a href="#link" th:text="${item.name}">name</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-8">
+            <div class="jumbotron">
+                <h3 class="display-4" th:text="${article.title}">Hello, world!</h3>
+                <p th:text="${article.text}">lorem ...</p>
+
+                <ul class="list-group">
+                    <li th:each="comment : ${article.comments}"
+                    class="list-group-item"
+                    th:text="${comment.text}"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </body>
 </html>
