@@ -7,10 +7,6 @@
     <link th:href="@{bootstrap.min.css}" rel="stylesheet"> <!-- wersja offline -->
 </head>
 <body>
-<!--Plik Dashboard-->
-<!--<pre th:text="${menu}"></pre>-->
-<!--<pre th:text="${article}"></pre>-->
-<body>
 <div class="container">
     <div class="row">
         <div class="col-4">
@@ -19,7 +15,8 @@
                     <a
                             th:href="${item.url}"
                             th:text="${item.name}">name
-                    target="_blank"</a>
+                            target="_blank"
+                    </a>
                 </li>
             </ul>
         </div>
@@ -37,6 +34,5 @@
         </div>
     </div>
 </div>
-</body>
 </body>
 </html>

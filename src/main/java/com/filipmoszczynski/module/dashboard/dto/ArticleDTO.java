@@ -1,4 +1,4 @@
-package com.filipmoszczynski.module.dashboard;
+package com.filipmoszczynski.module.dashboard.dto;
 
 import java.util.List;
 

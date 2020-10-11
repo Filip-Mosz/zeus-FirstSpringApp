@@ -1,5 +1,7 @@
-package com.filipmoszczynski.module.dashboard;
+package com.filipmoszczynski.module.dashboard.service;
 
+import com.filipmoszczynski.module.dashboard.dto.ArticleDTO;
+import com.filipmoszczynski.module.dashboard.dto.CommentDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

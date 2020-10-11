@@ -1,5 +1,6 @@
-package com.filipmoszczynski.module.dashboard;
+package com.filipmoszczynski.module.dashboard.service;
 
+import com.filipmoszczynski.module.dashboard.dto.MenuDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

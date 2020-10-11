@@ -1,5 +1,7 @@
 package com.filipmoszczynski.module.dashboard;
 
+import com.filipmoszczynski.module.dashboard.service.ArticleService;
+import com.filipmoszczynski.module.dashboard.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
